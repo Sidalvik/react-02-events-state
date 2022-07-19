@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import products from '../../models/Products';
 import IconSwitch from './IconSwitch/IconSwitch';
 import ListView from './ListView/ListView';
@@ -29,7 +29,9 @@ function Store(props) {
   )
 }
 
-// Store.propTypes = {};
+Store.propTypes = {
+  props: PropTypes.any,
+};
 
 
 export default Store

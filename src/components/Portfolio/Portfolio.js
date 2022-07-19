@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import categoryList from '../../models/CategoryList'
 import dataList from '../../models/dataList'
@@ -6,6 +6,10 @@ import Toolbar from './Toobar/Toolbar'
 import ProjectList from './ProjectList/ProjectList'
 
 export class Portfolio extends Component {
+  static propTypes = {
+    props: PropTypes.any,
+  }
+
   state = {
       selected: 'All',
   }
